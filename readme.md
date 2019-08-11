@@ -1,4 +1,2 @@
 # Subwoofer box app
 ---
-
-
