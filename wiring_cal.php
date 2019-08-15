@@ -1,8 +1,9 @@
 <!-- Sub Box Builders Calculator 
 	 Group page: https://www.facebook.com/groups/subboxbuilders/
 	 Created By:
-	 Leonard Zakoo of 430Designs
 	 James B. of TheBoxMan
+	 Leonard Zakoor of 430Designs
+	 
 	 and any other info you would like to add
 
 -->
@@ -31,38 +32,53 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<table>
-					<tr>
-						<td># Speakers</td>
-						<td><input type = "number" id = "speakers" value=""   maxlength="2" required /></td>
-					</tr>
-					<tr>
-						<td>Ohm</td>
-						<td><input type = "number" id = "ohms" value=""   maxlength="2" required /></td>
-					</tr>
-					<tr>
-						<td>Select</td>
-						<td>
-							<button type="button" class="btn btn-primary" onclick="dvc()">Dual voice-coil</button>
-							<button type="button" class="btn btn-primary" id="svc" onclick="svc()">Single voice-coil</button>
-						</td>
-					</tr>
-					<tr>
-						<!-- <td colspan="2"><hr></td> -->
-					</tr>
-					<tr>
-						<td class="sep">Parallel </td>
-						<td class="sep"><div id = "parallel" ></div></td>
-					</tr>
-					<tr>
-						<td>Series </td>
-						<td><div id = "series" ></div></td>
-					</tr>
-					<tr>
-						<td class="sep"></td>
-						<td class="sep"></td>
-					</tr>
-				</table>
+
+				<div class="row">
+					<div class="col-md-4">
+						<label for=""># Speakers</label>
+					</div>
+					<div class="col-md-4">
+						<input type = "number" id = "speakers" value=""   maxlength="2" required />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<label for="">Ohms</label>
+					</div>
+					<div class="col-md-4">
+						<input type = "number" id = "ohms" value=""   maxlength="2" required />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<label for=""># of voice coils</label>
+					</div>
+					<div class="col-md-8">
+						<button type="button" class="btn btn-primary" onclick="dvc()">Dual voice-coil</button>
+						<button type="button" class="btn btn-primary" id="svc" onclick="svc()">Single voice-coil</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<p>Parallel</p>
+					</div>
+					<div class="col-md-4">
+						<div id ="parallel"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<p>Series</p>
+					</div>
+					<div class="col-md-4">
+						<div id ="series"></div>
+					</div>
+				</div>
+					
 			</div>
 			<div class="col-md-6">
 				<div id="show_wire_dia"><img id="wire_dia" src="img/default.gif" ></div>

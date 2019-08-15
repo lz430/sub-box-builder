@@ -8,11 +8,18 @@ header {
 }
 .container {
   border: 1px solid #f1f1f1;
-  /*box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.13);*/
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.13);
+  padding: 25px 15px;
 }
 
+.bg-dark {
+    background-color: #343a40 !important;
+}
 
-
+/*Utilities*/
+.btn {
+  border-radius: 3px;
+}
 
 /* Old styles
   hr {
